@@ -12,7 +12,9 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
+p {
+text-align: center;
+}
 /* OUTER WRAPPER */
 .outer-box {
   display: flex;
@@ -33,10 +35,7 @@ body {
   width: 95%;
   border-radius: 12px;
   margin: 20px auto;
-
   border: 4px double #18453B;  /* (1) diploma border */
-
-  background-image: url("paper-texture.png");  /* (2) parchment texture */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -142,6 +141,13 @@ img {
     flex-direction: column;
   }
 }
+
+/* Ensure content sits ABOVE watermark */
+.inner-box  * {
+  position: relative;
+  z-index: 1;
+}
+
  /* WATERMARK (6) */
 .inner-box {
   position: relative;
@@ -160,11 +166,7 @@ img {
   pointer-events: none;
 }
 
-/* Ensure content sits ABOVE watermark */
-.inner-box > * {
-  position: relative;
-  z-index: 1;
-}
+
 
 /* SECTION TITLES */
 .section-title {
@@ -254,7 +256,7 @@ img {
 
 .skill-card {
   background-color: #ffffff;
-  border: 5px solid #18453B;      /* thicker border */
+  border: 6px solid #18453B;      /* thicker border */
   border-radius: 18px;
   padding: 20px 15px;
   text-align: center;
@@ -281,4 +283,33 @@ img {
   height: 60px;
   object-fit: contain;
   margin-bottom: 12px;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 20px auto 30px auto;   /* spacing from line + bottom */
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+.secondary-text {
+  max-width: 750px;
+  margin: 20px auto 10px auto;   /* spacing above & below */
+  text-align: center;
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Adds spacing between first and second paragraphs */
+.intro-spacer {
+  height: 25px;
+}
+
+/* Optional: make your decor line a bit cleaner */
+.decor-line {
+  width: 60%;
+  height: 2px;
+  background-color: #18453B;
+  margin: 20px auto 30px auto;
 }
