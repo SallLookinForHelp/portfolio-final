@@ -43,7 +43,6 @@ nav.dashboard {
 
 nav .nav-left {
   display: flex;
-  
 }
 
 nav .logo {
@@ -73,6 +72,7 @@ h1, h2, h3 {
   color: #18453B;
   margin-bottom: 10px;
   font-weight: 700;
+  font-family: Bookman, serif;
 }
 
 
@@ -128,7 +128,6 @@ img {
   border-radius: 6px;
 }
 
-
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -137,6 +136,13 @@ footer {
   padding: 20px 0;
 }
 
+.profile-pic {
+  width: 150px;        /* choose any size */
+  height: 150px;       /* keep width = height */
+  object-fit: cover;   /* crops nicely */
+  border-radius: 50%;  /* makes circle */
+  display: block;
+}
 
 @media (max-width: 768px) {
 
