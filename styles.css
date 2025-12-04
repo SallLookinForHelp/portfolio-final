@@ -223,3 +223,63 @@ img {
   font-family: Bookman, serif;
   font-size: 1.1rem;
 }
+
+/* EXTRA SPACING BELOW DIPLOMA SECTION */
+.section-spacer {
+  height: 40px;
+}
+
+/* SECTION TITLES */
+.section-title {
+  text-align: center;
+  font-family: Bookman, serif;
+  color: #18453B;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* OPTIONAL: clean, bold, modern tech-friendly font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+/* ========================= */
+/* ROUNDED SKILL SQUARE TILES */
+/* ========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px;
+  padding: 10px 0 30px 0;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  border: 4px solid #18453B;      /* thicker border */
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  color: #18453B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Montserrat', sans-serif;  /* clearer bold font */
+  font-weight: 700;
+  font-size: 1.1rem;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+/* Hover grow effect */
+.skill-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.18);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
