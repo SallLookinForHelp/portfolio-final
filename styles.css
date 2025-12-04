@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: 'Inter', sans-serif;
   background-color: #FAF9F6;
@@ -12,7 +11,7 @@ body {
   line-height: 1.6;
 }
 
-.big-container {
+.outer-box {
   display:flex;
   width: 65%;
   margin: 30px auto;
@@ -20,28 +19,26 @@ body {
   gap: 20px;
   background-color: #18453B;
   border-radius: 20px;
+  flex-direction: column;
 }
 
 .inner-box {
   background-color: white;
   padding: 20px;
-  width: 95%;          /* or set a fixed width */    /* optional limit */
+  width: 95%;
   border-radius: 20px;
   margin: 20px;
-  
-
 }
 
+/* Removed .flex only if unused — if you need it, add back */
 .flex {
   display: flex;
   gap: 20px;
 }
 
-.grid {
-  display: grid;
-  gap: 20px;
-}
-
+/* Removed .grid (not used) */
+/* Removed nav .nav-left (not used) */
+/* Removed nav .logo (not used) */
 
 nav.dashboard {
   display: flex;
@@ -50,16 +47,6 @@ nav.dashboard {
   background-color: #fff;
   border-bottom: 1px solid #D9D9D9;
   padding: 15px 20px;
-}
-
-
-nav .nav-left {
-  display: flex;
-}
-
-nav .logo {
-  height: 32px; 
-  width: auto;
 }
 
 nav .nav-center {
@@ -75,10 +62,9 @@ nav .nav-center a {
   font-weight: 600;
 }
 
-nav .nav-center  a:hover {
+nav .nav-center a:hover {
   opacity: 0.7;
 }
-
 
 h1, h2, h3 {
   color: #18453B;
@@ -86,7 +72,6 @@ h1, h2, h3 {
   font-weight: 700;
   font-family: Bookman, serif;
 }
-
 
 img {
   max-width: 100%;
@@ -102,14 +87,28 @@ footer {
 }
 
 .profile-pic {
-  width: 150px;        /* choose any size */
-  height: 150px;       /* keep width = height */
-  object-fit: cover;   /* crops nicely */
-  border-radius: 50%;  /* makes circle */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
   display: block;
   margin: auto;
 }
 
+.card {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.card h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  max-width: 650px;
+  margin: 0 auto;
+}
 
 @media (max-width: 768px) {
 
@@ -122,4 +121,10 @@ footer {
   .flex {
     flex-direction: column;
   }
+}
+
+.seal {
+  width: 120px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
