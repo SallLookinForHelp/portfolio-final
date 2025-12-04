@@ -12,12 +12,24 @@ body {
   line-height: 1.6;
 }
 
+.big-container {
+  display:flex;
+  width: 65%;
+  margin: 30px auto;
+  justify-content: center;
+  gap: 20px;
+  background-color: #18453B;
+  border-radius: 20px;
+}
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 0;
+.inner-box {
+  background-color: white;
+  padding: 20px;
+  width: 95%;          /* or set a fixed width */    /* optional limit */
+  border-radius: 20px;
+  margin: 20px;
+  
+
 }
 
 .flex {
@@ -95,7 +107,9 @@ footer {
   object-fit: cover;   /* crops nicely */
   border-radius: 50%;  /* makes circle */
   display: block;
+  margin: auto;
 }
+
 
 @media (max-width: 768px) {
 
