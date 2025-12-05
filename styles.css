@@ -176,7 +176,10 @@ h3 {
   margin-bottom: 14px;
 }
 
-
+.skill-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 
 
