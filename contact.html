@@ -3,19 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke Sall</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    <nav class="dashboard">
-        <div class="nav-center">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="blog.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-</header>
-</body>
 
+<nav class="sage-nav no-sticky">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="contact-wrapper">
+    <div class="contact-card">
+        <h1>Contact Me</h1>
+        <p class="contact-subtext">
+            Have a question, want to work together, or just want to connect?
+            Send me a message below and I’ll get back to you.
+        </p>
+
+        <form class="contact-form" action="#" method="POST">
+            
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+<footer class="footer">
+    2025 Luke Sall — Michigan State University
+</footer>
+</html>
